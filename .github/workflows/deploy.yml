@@ -70,8 +70,8 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
           bucket: github-samim
-          dist-folder: ./dist
-          # bucket-region: us-east-2
+          dist_folder: ./dist
+          bucket-region: us-east-1
       - name: Output information
         run: |
           echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
